@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0qxtyimmgkb4"]
+
+[ext_resource type="Texture2D" uid="uid://di5rg8opfo3yx" path="res://assets/Env/enemies.png" id="1_h5q6u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cehjd"]
+atlas = ExtResource("1_h5q6u")
+region = Rect2(380, 29, 28, 25)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4l30y"]
+atlas = ExtResource("1_h5q6u")
+region = Rect2(408, 29, 28, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_15e3s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cehjd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4l30y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 4.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2810s"]
+radius = 6.0
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-5, 4)
+sprite_frames = SubResource("SpriteFrames_15e3s")
+autoplay = "default"
+frame_progress = 0.950669
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_2810s")

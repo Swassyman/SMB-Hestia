@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://ds02u2yot1hlg"]
+
+[ext_resource type="Texture2D" uid="uid://tmb8c1pfcjrh" path="res://assets/Chars/flame-1.png" id="1_fmdvk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hmuww"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fmdvk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2je72"]
+a = Vector2(13, -12)
+b = Vector2(-28, 27)
+
+[node name="flame" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-12, 12)
+scale = Vector2(0.75, 0.71875)
+sprite_frames = SubResource("SpriteFrames_hmuww")
+frame_progress = 0.36017
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-6, 6)
+shape = SubResource("SegmentShape2D_2je72")

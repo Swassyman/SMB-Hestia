@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://w5f3bit48tv0"]
+
+[ext_resource type="Texture2D" uid="uid://cn6gmbka8v6op" path="res://assets/Chars/axe-thrower.png" id="1_fs67c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3wdrm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fs67c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bewwc"]
+radius = 8.0
+height = 22.0
+
+[node name="hammerthrower" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_3wdrm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -4)
+shape = SubResource("CapsuleShape2D_bewwc")

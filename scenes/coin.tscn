@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5fg0uf7fvgvi"]
+
+[ext_resource type="Script" path="res://Area2D.gd" id="1_dbeew"]
+[ext_resource type="Texture2D" uid="uid://dil3kml8arqei" path="res://assets/Env/hesita coins_nobg.png" id="2_1vckm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xts1c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1vckm")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1vckm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4low6"]
+radius = 5.09902
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_dbeew")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -1)
+scale = Vector2(0.71875, 0.760417)
+sprite_frames = SubResource("SpriteFrames_xts1c")
+frame_progress = 0.786761
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_4low6")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

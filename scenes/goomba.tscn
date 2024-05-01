@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://oyh1y7xmclw6"]
+
+[ext_resource type="Texture2D" uid="uid://j846wanv4hlr" path="res://assets/Chars/goomba.png" id="1_0ei5f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c6vrt"]
+size = Vector2(10, 13)
+
+[node name="Goomba" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(0, 1)
+texture = ExtResource("1_0ei5f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_c6vrt")
