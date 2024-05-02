@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvrnhxjqyl5t2"
-path="res://.godot/imported/walkleft1(32).png-fbdcd37e87ceca6b1a5107c0948ec8a3.ctex"
+uid="uid://cpny7hck0wdoj"
+path="res://.godot/imported/bowser_tileset.png-dc85770bf5dade4965a1f5c5324cdb65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Chars/walkleft1(32).png"
-dest_files=["res://.godot/imported/walkleft1(32).png-fbdcd37e87ceca6b1a5107c0948ec8a3.ctex"]
+source_file="res://assets/Chars/bowser_tileset.png"
+dest_files=["res://.godot/imported/bowser_tileset.png-dc85770bf5dade4965a1f5c5324cdb65.ctex"]
 
 [params]
 

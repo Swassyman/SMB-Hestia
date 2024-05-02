@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qbvsfxdumaf"
-path="res://.godot/imported/walkleft2(32).png-ea7e225b5bd008e735f3c1e5edf1e2e2.ctex"
+uid="uid://b1j005wm6jq5l"
+path="res://.godot/imported/skybg.png-3f67f83201d5bea657a39d9b5f4d18fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Chars/walkleft2(32).png"
-dest_files=["res://.godot/imported/walkleft2(32).png-ea7e225b5bd008e735f3c1e5edf1e2e2.ctex"]
+source_file="res://assets/Bgs/skybg.png"
+dest_files=["res://.godot/imported/skybg.png-3f67f83201d5bea657a39d9b5f4d18fb.ctex"]
 
 [params]
 
