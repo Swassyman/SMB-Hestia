@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c5fg0uf7fvgvi"]
 
-[ext_resource type="Script" path="res://Area2D.gd" id="1_dbeew"]
+[ext_resource type="Script" path="res://scripts/Area2D.gd" id="1_dbeew"]
 [ext_resource type="Texture2D" uid="uid://dil3kml8arqei" path="res://assets/Env/hesita coins_nobg.png" id="2_1vckm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xts1c"]
