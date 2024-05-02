@@ -1,8 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://bm1gxps435qxh"]
+[gd_scene load_steps=10 format=3 uid="uid://bm1gxps435qxh"]
 
 [ext_resource type="Texture2D" uid="uid://1ympbfdddlig" path="res://assets/Env/OverWorld.png" id="1_aggfc"]
 [ext_resource type="Texture2D" uid="uid://572kwoxch6yn" path="res://assets/Bgs/mechanical.png" id="2_we0bf"]
-[ext_resource type="PackedScene" uid="uid://dmryitfcxxnih" path="res://scenes/player.tscn" id="3_gvp6u"]
 [ext_resource type="PackedScene" uid="uid://ds02u2yot1hlg" path="res://scenes/flame.tscn" id="4_nijou"]
 [ext_resource type="PackedScene" uid="uid://b3aykraaiu2it" path="res://scenes/fireball.tscn" id="5_3relr"]
 [ext_resource type="PackedScene" uid="uid://w5f3bit48tv0" path="res://scenes/hammerthrower.tscn" id="6_bcxdu"]
@@ -127,14 +126,6 @@ texture_filter = 1
 position = Vector2(79, -1130.5)
 scale = Vector2(2.60938, 2.59766)
 texture = ExtResource("2_we0bf")
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_gvp6u")]
-position = Vector2(-234, -863)
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-offset = Vector2(0, -66.96)
-zoom = Vector2(2.555, 2.555)
-position_smoothing_enabled = true
 
 [node name="Enemies" type="Node" parent="."]
 

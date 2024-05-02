@@ -1,30 +1,38 @@
-[gd_scene load_steps=7 format=3 uid="uid://dmryitfcxxnih"]
+[gd_scene load_steps=9 format=3 uid="uid://dmryitfcxxnih"]
 
-[ext_resource type="Texture2D" uid="uid://b1jlfdy4lwx58" path="res://assets/Chars/idle.png" id="1_6iisb"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rihpm"]
-[ext_resource type="Texture2D" uid="uid://hysbjyvofur2" path="res://assets/Chars/walkright1(32).png" id="3_xat15"]
-[ext_resource type="Texture2D" uid="uid://dqfd0i113wb5p" path="res://assets/Chars/walkright2(32).png" id="4_pi00q"]
+[ext_resource type="Texture2D" uid="uid://cmjanwtj43686" path="res://assets/Chars/walk1(32).png" id="2_nb6vd"]
+[ext_resource type="Texture2D" uid="uid://bxjl180esf203" path="res://assets/Chars/walk2(32).png" id="3_mtdbn"]
+[ext_resource type="Texture2D" uid="uid://dfh7l5mrhslfo" path="res://assets/Chars/walk3(32).png" id="4_n6w8r"]
+[ext_resource type="Texture2D" uid="uid://ctkyaus8jvmum" path="res://assets/Chars/jump1(32).png" id="5_x485c"]
+[ext_resource type="Texture2D" uid="uid://bfin0w8kmefqw" path="res://assets/Chars/jump2(32).png" id="6_opejv"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_8hm01"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_ofcrm"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_6iisb")
+"texture": ExtResource("3_mtdbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_nb6vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n6w8r")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_xat15")
+"texture": ExtResource("5_x485c")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_pi00q")
+"texture": ExtResource("6_opejv")
 }],
 "loop": true,
-"name": &"walkright",
-"speed": 5.0
+"name": &"jumo",
+"speed": 3.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8nh6v"]
@@ -35,13 +43,10 @@ script = ExtResource("1_rihpm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-2.03125, -3)
-scale = Vector2(0.939453, 0.96875)
-sprite_frames = SubResource("SpriteFrames_8hm01")
-animation = &"walkright"
-autoplay = "walkright"
-frame_progress = 0.603019
+sprite_frames = SubResource("SpriteFrames_ofcrm")
+frame_progress = 0.984787
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(-1.5, -0.5)
 shape = SubResource("RectangleShape2D_8nh6v")

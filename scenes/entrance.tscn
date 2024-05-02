@@ -1,12 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://o2jc8u4syddy"]
+[gd_scene load_steps=10 format=3 uid="uid://o2jc8u4syddy"]
 
 [ext_resource type="Texture2D" uid="uid://1ympbfdddlig" path="res://assets/Env/OverWorld.png" id="1_wmh5k"]
 [ext_resource type="Texture2D" uid="uid://cl0ybajkekp6r" path="res://assets/Bgs/pixil-fentrance.png" id="3_6d6n4"]
-[ext_resource type="PackedScene" uid="uid://dmryitfcxxnih" path="res://scenes/player.tscn" id="4_jcyji"]
 [ext_resource type="PackedScene" uid="uid://c5fg0uf7fvgvi" path="res://scenes/coin.tscn" id="5_1qs4n"]
 [ext_resource type="PackedScene" uid="uid://oyh1y7xmclw6" path="res://scenes/goomba.tscn" id="6_xm4u4"]
 [ext_resource type="PackedScene" uid="uid://b0qxtyimmgkb4" path="res://scenes/piranhaplant.tscn" id="7_8oru2"]
-[ext_resource type="Texture2D" uid="uid://b1j005wm6jq5l" path="res://assets/Bgs/skybg.png" id="8_b53w2"]
 [ext_resource type="PackedScene" uid="uid://b3aykraaiu2it" path="res://scenes/fireball.tscn" id="8_ldwfh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j4tus"]
@@ -201,17 +199,6 @@ position = Vector2(1163, -6)
 [node name="Area2D20" parent="Node2" instance=ExtResource("5_1qs4n")]
 position = Vector2(1177, 7)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_jcyji")]
-position = Vector2(36, 2)
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-offset = Vector2(97.865, -25.77)
-zoom = Vector2(2.7, 2.7)
-limit_top = -190
-limit_right = 1690
-limit_bottom = 66
-position_smoothing_enabled = true
-
 [node name="Enemies" type="Node" parent="."]
 
 [node name="Goomba" parent="Enemies" instance=ExtResource("6_xm4u4")]
@@ -240,10 +227,3 @@ position = Vector2(880, 23)
 
 [node name="Fireball3" parent="." instance=ExtResource("8_ldwfh")]
 position = Vector2(968, 23)
-
-[node name="Skybg" type="Sprite2D" parent="."]
-z_index = -2
-texture_filter = 1
-texture_repeat = 2
-position = Vector2(87, -134)
-texture = ExtResource("8_b53w2")

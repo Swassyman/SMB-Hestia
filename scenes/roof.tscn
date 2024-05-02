@@ -1,0 +1,309 @@
+[gd_scene load_steps=13 format=3 uid="uid://c4abieda4wy45"]
+
+[ext_resource type="Texture2D" uid="uid://v6k2n88oefd6" path="res://assets/Env/roof.png" id="1_jkp5n"]
+[ext_resource type="Texture2D" uid="uid://1ympbfdddlig" path="res://assets/Env/OverWorld.png" id="2_74llp"]
+[ext_resource type="PackedScene" uid="uid://5fjquuec4vmv" path="res://scenes/deathblock.tscn" id="3_6lukk"]
+[ext_resource type="PackedScene" uid="uid://b3aykraaiu2it" path="res://scenes/fireball.tscn" id="4_cqxys"]
+[ext_resource type="PackedScene" uid="uid://ds02u2yot1hlg" path="res://scenes/flame.tscn" id="5_atrn7"]
+[ext_resource type="PackedScene" uid="uid://c3byjjspp16i3" path="res://scenes/gun.tscn" id="6_yvi1y"]
+[ext_resource type="PackedScene" uid="uid://w5f3bit48tv0" path="res://scenes/hammerthrower.tscn" id="7_8qbtw"]
+[ext_resource type="PackedScene" uid="uid://b0qxtyimmgkb4" path="res://scenes/piranhaplant.tscn" id="8_xlg7p"]
+[ext_resource type="PackedScene" uid="uid://oyh1y7xmclw6" path="res://scenes/goomba.tscn" id="9_evrrr"]
+[ext_resource type="PackedScene" uid="uid://dmryitfcxxnih" path="res://scenes/player.tscn" id="10_pw8bw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4ewf4"]
+texture = ExtResource("2_74llp")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0 = 0
+3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:0/0 = 0
+6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:0/0/physics_layer_0/angular_velocity = 0.0
+7:0/0 = 0
+7:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+6:1/0 = 0
+6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:1/0/physics_layer_0/angular_velocity = 0.0
+7:1/0 = 0
+7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:1/0/physics_layer_0/angular_velocity = 0.0
+5:2/0 = 0
+5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:2/0/physics_layer_0/angular_velocity = 0.0
+6:2/0 = 0
+6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:2/0/physics_layer_0/angular_velocity = 0.0
+7:2/0 = 0
+7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:2/0/physics_layer_0/angular_velocity = 0.0
+5:3/0 = 0
+5:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:3/0/physics_layer_0/angular_velocity = 0.0
+6:3/0 = 0
+6:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:3/0/physics_layer_0/angular_velocity = 0.0
+7:3/0 = 0
+7:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:3/0/physics_layer_0/angular_velocity = 0.0
+5:4/0 = 0
+5:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:4/0/physics_layer_0/angular_velocity = 0.0
+4:5/0 = 0
+4:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:5/0/physics_layer_0/angular_velocity = 0.0
+5:5/0 = 0
+5:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:5/0/physics_layer_0/angular_velocity = 0.0
+6:5/0 = 0
+6:5/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:5/0/physics_layer_0/angular_velocity = 0.0
+0:6/0 = 0
+0:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:6/0/physics_layer_0/angular_velocity = 0.0
+1:6/0 = 0
+1:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:6/0/physics_layer_0/angular_velocity = 0.0
+2:6/0 = 0
+2:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:6/0/physics_layer_0/angular_velocity = 0.0
+3:6/0 = 0
+3:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+3:6/0/physics_layer_0/angular_velocity = 0.0
+4:6/0 = 0
+4:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:6/0/physics_layer_0/angular_velocity = 0.0
+5:6/0 = 0
+5:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:6/0/physics_layer_0/angular_velocity = 0.0
+6:6/0 = 0
+6:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+6:6/0/physics_layer_0/angular_velocity = 0.0
+7:6/0 = 0
+7:6/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+7:6/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_kl4s6"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_4ewf4")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Roof" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(176.35, 376.411)
+scale = Vector2(0.669398, 1.72822)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof2" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(351, 345)
+scale = Vector2(0.169, 1.7)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof3" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(430.625, 360)
+scale = Vector2(0.1735, 1.83289)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof4" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(565.5, 376.688)
+scale = Vector2(0.346, 1.81375)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof6" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(671, 376)
+scale = Vector2(0.0879999, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof7" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(744, 359)
+scale = Vector2(0.124, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof8" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(816.75, 328)
+scale = Vector2(0.165, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof9" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(888, 360)
+scale = Vector2(0.124, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof10" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1025.5, 376)
+scale = Vector2(0.41, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof11" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1288.5, 375)
+scale = Vector2(0.122, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof12" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1336, 360)
+scale = Vector2(0.0439999, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof13" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1408, 375)
+scale = Vector2(0.244, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof14" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1505, 375)
+scale = Vector2(0.164, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof15" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1584.5, 343)
+scale = Vector2(0.162, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof16" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1688.5, 376)
+scale = Vector2(0.286, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof17" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1808, 376)
+scale = Vector2(0.164, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof18" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1880.5, 376)
+scale = Vector2(0.134, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof19" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(1944, 376)
+scale = Vector2(0.124, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof20" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(2008, 344)
+scale = Vector2(0.124, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof21" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(2078.5, 376)
+scale = Vector2(0.166, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof22" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(2176, 376)
+scale = Vector2(0.164, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof23" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(2313, 376)
+scale = Vector2(0.364, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof24" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(2448, 360)
+scale = Vector2(0.164, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="Roof25" type="Sprite2D" parent="Node"]
+texture_filter = 1
+position = Vector2(2624.5, 375)
+scale = Vector2(0.566, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_kl4s6")
+format = 2
+layer_0/tile_data = PackedInt32Array(1572867, 0, 0, 1572868, 0, 0, 1572869, 0, 0, 1572870, 0, 0, 1572871, 0, 0, 1572872, 0, 0, 1572873, 0, 0, 1572874, 0, 0, 1572875, 0, 0, 1572876, 0, 0, 1572877, 0, 0, 1572878, 0, 0, 1572879, 0, 0, 1572880, 0, 0, 1572881, 0, 0, 1572882, 0, 0, 1441812, 0, 0, 1441813, 0, 0, 1441814, 0, 0, 1441815, 0, 0, 1507353, 0, 0, 1507354, 0, 0, 1507355, 0, 0, 1507356, 0, 0, 1572895, 0, 0, 1572896, 0, 0, 1572897, 0, 0, 1572898, 0, 0, 1572899, 0, 0, 1572900, 0, 0, 1572901, 0, 0, 1572902, 0, 0, 1572906, 0, 0, 1572905, 0, 0, 1507373, 0, 0, 1507374, 0, 0, 1507375, 0, 0, 1376305, 0, 0, 1376306, 0, 0, 1376307, 0, 0, 1376308, 0, 0, 1507382, 0, 0, 1507383, 0, 0, 1507384, 0, 0, 1572923, 0, 0, 1572924, 0, 0, 1572925, 0, 0, 1572926, 0, 0, 1572927, 0, 0, 1572928, 0, 0, 1572929, 0, 0, 1572930, 0, 0, 1572931, 0, 0, 1572932, 0, 0, 1572933, 0, 0, 1572934, 0, 0, 1572935, 0, 0, 1572936, 0, 0, 1572937, 0, 0, 1572938, 0, 0, 1572939, 0, 0, 1572943, 0, 0, 1572944, 0, 0, 1572945, 0, 0, 1572949, 0, 0, 1572950, 0, 0, 1572951, 0, 0, 1572952, 0, 0, 1572953, 0, 0, 1572954, 0, 0, 1572956, 0, 0, 1572957, 0, 0, 1572959, 0, 0, 1572966, 0, 0, 1572967, 0, 0, 1572968, 0, 0, 1572969, 0, 0, 1572970, 0, 0, 1572971, 0, 0, 1572972, 0, 0, 1572975, 0, 0, 1572976, 0, 0, 1572977, 0, 0, 1572978, 0, 0, 1572980, 0, 0, 1572982, 0, 0, 1572984, 0, 0, 1572985, 0, 0, 1572986, 0, 0, 1572992, 0, 0, 1572993, 0, 0, 1572994, 0, 0, 1572998, 0, 0, 1572999, 0, 0, 1573000, 0, 0, 1573001, 0, 0, 1573004, 0, 0, 1573005, 0, 0, 1573006, 0, 0, 1573007, 0, 0, 1573008, 0, 0, 1573009, 0, 0, 1573010, 0, 0, 1573011, 0, 0, 1573021, 0, 0, 1573022, 0, 0, 1573023, 0, 0, 1573024, 0, 0, 1573025, 0, 0, 1573027, 0, 0, 1573028, 0, 0, 1573029, 0, 0, 1573030, 0, 0, 1573031, 0, 0, 1573032, 0, 0, 1573033, 0, 0, 1573034, 0, 0, 1573026, 0, 0, 1573012, 0, 0, 1507479, 0, 0, 1507480, 0, 0, 1507481, 0, 0, 1507482, 0, 0, 1441916, 0, 0, 1441917, 0, 0, 1441918, 0, 0, 1441889, 0, 0, 1441890, 0, 0, 1441891, 0, 0, 1441892, 0, 0, 1507411, 0, 0, 1376320, 0, 0, 1376322, 0, 0, 1376323, 0, 0, 1376324, 0, 0, 1376290, 0, 0, 1376291, 0, 0, 1245205, 0, 0, 1376343, 0, 0, 1376345, 0, 0, 1376361, 0, 0, 1376362, 0, 0, 1376373, 0, 0, 1376400, 0, 0, 1376374, 262144, 0, 1376363, 262144, 0, 1376344, 262144, 0, 1376321, 262144, 0, 1376289, 262144, 0, 1376292, 262144, 0, 1245206, 262144, 0, 1376267, 262144, 0, 1376268, 262144, 0, 1376269, 262144, 0, 1376399, 262144, 0, 1376401, 262144, 0, 1376402, 262144, 0, 1572995, 0, 0, 1179660, 262144, 0, 1572903, 0, 0)
+
+[node name="deathblock" parent="." instance=ExtResource("3_6lukk")]
+position = Vector2(471, 373)
+
+[node name="deathblock2" parent="." instance=ExtResource("3_6lukk")]
+position = Vector2(642, 389)
+
+[node name="deathblock3" parent="." instance=ExtResource("3_6lukk")]
+position = Vector2(1113, 390)
+
+[node name="deathblock4" parent="." instance=ExtResource("3_6lukk")]
+position = Vector2(1113, 390)
+
+[node name="Roof10" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1170.75, 376)
+scale = Vector2(0.233, 1.8075)
+texture = ExtResource("1_jkp5n")
+
+[node name="deathblock5" parent="." instance=ExtResource("3_6lukk")]
+position = Vector2(2119, 390)
+
+[node name="Fireball" parent="." instance=ExtResource("4_cqxys")]
+position = Vector2(1228, 414)
+
+[node name="flame" parent="." instance=ExtResource("5_atrn7")]
+position = Vector2(829, 292)
+
+[node name="Gun" parent="." instance=ExtResource("6_yvi1y")]
+position = Vector2(2193, 370)
+
+[node name="hammerthrower" parent="." instance=ExtResource("7_8qbtw")]
+position = Vector2(1590, 343)
+
+[node name="Area2D" parent="." instance=ExtResource("8_xlg7p")]
+position = Vector2(1818, 367)
+
+[node name="Goomba" parent="." instance=ExtResource("9_evrrr")]
+position = Vector2(269, 376)
+
+[node name="Goomba2" parent="." instance=ExtResource("9_evrrr")]
+position = Vector2(241, 376)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("10_pw8bw")]
+position = Vector2(73, 370)
