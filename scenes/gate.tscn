@@ -1,19 +1,49 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4m4x0ovpyvmq"]
+[gd_scene load_steps=6 format=3 uid="uid://d4m4x0ovpyvmq"]
 
 [ext_resource type="Texture2D" uid="uid://bv064clxbd7vs" path="res://assets/Env/gate.png" id="1_mvm7l"]
+[ext_resource type="Texture2D" uid="uid://8dypqjyu08k0" path="res://assets/Env/gate3.png" id="2_7rubs"]
+[ext_resource type="Texture2D" uid="uid://uuukny1d21xj" path="res://assets/Env/gate2.png" id="2_76xmg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fvvl7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mvm7l")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mvm7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7rubs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_76xmg")
+}],
+"loop": false,
+"name": &"open",
+"speed": 3.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3dw82"]
-size = Vector2(18.6386, 30.8794)
+size = Vector2(10.2175, 30.8794)
 
 [node name="Gate" type="Area2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
-position = Vector2(8.875, -35.875)
-scale = Vector2(2.50391, 3.12891)
-texture = ExtResource("1_mvm7l")
+position = Vector2(7.12501, -12.625)
+scale = Vector2(2.71484, 2.58203)
+sprite_frames = SubResource("SpriteFrames_fvvl7")
+animation = &"open"
+frame = 2
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(10.25, -21)
+position = Vector2(-4.37499, -3)
 scale = Vector2(2.22656, 2.00781)
 shape = SubResource("RectangleShape2D_3dw82")

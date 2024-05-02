@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bm1gxps435qxh"]
+[gd_scene load_steps=11 format=3 uid="uid://bm1gxps435qxh"]
 
 [ext_resource type="Texture2D" uid="uid://1ympbfdddlig" path="res://assets/Env/OverWorld.png" id="1_aggfc"]
 [ext_resource type="Texture2D" uid="uid://572kwoxch6yn" path="res://assets/Bgs/mechanical.png" id="2_we0bf"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://w5f3bit48tv0" path="res://scenes/hammerthrower.tscn" id="6_bcxdu"]
 [ext_resource type="PackedScene" uid="uid://oyh1y7xmclw6" path="res://scenes/goomba.tscn" id="7_gn0up"]
 [ext_resource type="PackedScene" uid="uid://c3byjjspp16i3" path="res://scenes/gun.tscn" id="8_cyt2g"]
-[ext_resource type="PackedScene" uid="uid://d4m4x0ovpyvmq" path="res://scenes/gate.tscn" id="9_qovpj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57vnd"]
 texture = ExtResource("1_aggfc")
@@ -183,6 +182,3 @@ position = Vector2(9, -1298)
 
 [node name="hammerthrower2" parent="Enemies" instance=ExtResource("6_bcxdu")]
 position = Vector2(225, -1288)
-
-[node name="Gate" parent="." instance=ExtResource("9_qovpj")]
-position = Vector2(332, -1295)
