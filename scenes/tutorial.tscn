@@ -124,6 +124,7 @@ texture = ExtResource("3_hf6mq")
 [node name="Sky5" type="Sprite2D" parent="Background"]
 z_index = -2
 texture_filter = 1
+texture_repeat = 2
 position = Vector2(-239.5, -114.75)
 scale = Vector2(1.00216, 1.11159)
 texture = ExtResource("3_hf6mq")
@@ -184,7 +185,7 @@ position = Vector2(273, -55)
 position = Vector2(522, -71)
 
 [node name="Area2D5" parent="Coins" instance=ExtResource("4_y6x2e")]
-position = Vector2(539, -72)
+position = Vector2(540, -71)
 
 [node name="Area2D6" parent="Coins" instance=ExtResource("4_y6x2e")]
 position = Vector2(700, -55)
